@@ -1,0 +1,17 @@
+<!--点赞粉丝-->
+<view class="cu-list menu menu-avatar">
+	<view class="cu-item" wx:for="{{likeList}}" wx:key>
+		<view class="cu-avatar lg" style="background-image:url({{item.img}});">
+			<view class="cu-tag badge {{item.showIcon==0?'icon-vip':''}}"></view>
+		</view>
+		<view class='content'>
+			<view class='text-black'>{{item.state}}</view>
+			<view class='text-gray'>
+        {{item.time}}
+			</view>
+		</view>
+		<view class='action'>
+			<view class="smallImg {{item.showImg==0?'active':'noActive'}}" style="background-image:url({{item.smallImg}});"></view>
+		</view>
+	</view>
+</view>

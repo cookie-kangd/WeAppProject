@@ -1,0 +1,7 @@
+<!--卡片轮播组件-->
+<swiper class="card-swiper" indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="cardSwiper">
+  <swiper-item wx:for="{{imageList}}" wx:key class="{{cardCur==index?'cur':''}}">
+    <view class="bg-img shadow-blur padding-tb-xl" style="background-image:url({{item}});" catchtap='cardTap'>
+    </view>
+  </swiper-item>
+</swiper>

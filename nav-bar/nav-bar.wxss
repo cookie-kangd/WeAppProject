@@ -1,0 +1,30 @@
+.nav {
+  white-space: nowrap;
+	background: #FFFFFF;
+}
+
+.nav .cu-item {
+  height: 90rpx;
+  display: inline-block;
+  line-height: 90rpx;
+  margin: 0 20rpx;
+  padding: 0 1rpx;
+}
+
+.nav .cu-item.cur {
+  border-bottom: 6rpx solid #0080FF;
+	margin-bottom: 20rpx;
+}
+
+.active {
+  color: black;
+  font-size: 35rpx;
+  font-weight: 600;
+}
+
+.icon-search:before { 
+  content: "\e65c";
+  margin-left: 30rpx;
+	margin-right: 20rpx;
+  color: black;
+}

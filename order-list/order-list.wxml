@@ -1,0 +1,38 @@
+<!--订单列表展示组件-->
+<!--引入保留两位小数wxs过滤器文件-->
+<wxs module="filters" src="./filters.wxs"></wxs>
+<view class="order-list" wx:for="{{orderList}}" wx:key>
+	<view class="order">
+		<view class="header">
+			<view class='padding'>
+				<view class="cu-avatar" style="background-image:url({{item.userAvatar}});">
+					<view class="cu-tag badge {{item.showTag==0?'icon-vip':''}}"></view>
+				</view>
+				<text class="authorName">{{item.userName}}</text>
+				<text class="orderState">{{item.orderState}}</text>
+			</view>
+		</view>
+		<view class="content">
+			<view class="contentMessage">
+				<image class="orderImg" src="{{item.img}}" mode='aspectFill'></image>
+				<view class="orderMsg">
+					<text class="zuopin">{{item.productName}}</text>
+					<text class="neirong">内容物：{{item.productContent}}</text>
+					<text class="neirong">规格：{{item.productSpec}}</text>
+					<text class="neirong">数量(件)：{{item.productCount}}</text>
+				</view>
+			</view>
+		</view>
+		<view class="footer">
+				<view class="price">
+					<text class="priceText">共{{item.orderCount}}件商品</text>
+					<text class="priceText">合计：¥{{filters.toFix(item.orderPrice)}}</text>
+					<text class="priceText">(含运费¥{{filters.toFix(item.orderCarriage)}})</text>
+				</view>
+			</view>
+	</view>
+	<view class="button">
+		<button class="active" size="mini" catchtap="_activeButtonTap">{{item.activeButton}}</button>
+		<button class="normal" size="mini" catchtap="_normalButtonTap">{{item.normalButton}}</button>
+	</view>
+</view>

@@ -1,0 +1,24 @@
+<!--关注粉丝-->
+<view class="cu-list menu menu-avatar">
+	<view class="cu-item" wx:for="{{followList}}" wx:key>
+		<view class="cu-avatar lg" style="background-image:url({{item.img}});">
+			<view class="cu-tag badge {{item.showIcon==0?'icon-vip':''}}"></view>
+		</view>
+		<view class='content'>
+			<view class='text-black'>{{item.userName}}</view>
+			<view class='text-gray text-sm'>
+			</view>
+		</view>
+		<view class='action'>
+			<button class='cu-btn lg' plain="true" catchtap="followTap">
+				<view wx:if="{{item.isFollow==0?'active':''}}">
+					<text class="buttonText1">+</text>
+					<text class="buttonText2">关注</text>
+				</view>
+				<view wx:if="{{item.isFollow==1?'noActive':''}}">
+					<text class="buttonText2">已关注</text>
+				</view>
+			</button>
+		</view>
+	</view>
+</view>

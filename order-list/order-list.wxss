@@ -1,0 +1,179 @@
+.order-list {
+	width: 100%;
+	height: 505rpx;
+	margin-top: 5rpx;
+}
+
+.order {
+	width: 100%;
+	height: 400rpx;
+	background: #FFFFFF;
+}
+
+.button {
+	width: 100%;
+	height: 100rpx;
+	background: #FFFFFF;
+	margin-top: 3rpx;
+}
+
+.header {
+	width: 100%;
+	height: 100rpx;
+}
+
+.cu-avatar {
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #ccc;
+  color: #fff;
+  white-space: nowrap;
+  position: relative;
+  width: 64rpx;
+  height: 64rpx;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  font-size: 1.5em;
+	border-radius: 5000rpx;
+	margin-left: 20rpx;
+}
+
+.padding {
+  padding: 30rpx;
+}
+
+.cu-tag {
+  font-size: 24rpx;
+  vertical-align: middle;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0rpx 16rpx;
+  height: 48rpx;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+.cu-tag.badge {
+  border-radius: 200rpx;
+  position: absolute;
+  top: 40rpx;
+  right: -10rpx;
+  font-size: 20rpx;
+  padding: 0rpx 10rpx;
+  height: 28rpx;
+  color: #fff;
+}
+
+.icon-vip:before { 
+	content: "\e6c3";
+	background: #0081FF;
+	color: #fff;
+	border-radius: 100rpx;
+}
+
+.authorName {
+	display: inline-flex;
+	justify-content: flex-start;
+	margin-top: 10rpx;
+	margin-left: 10rpx;
+	color: #2A2A2A;
+	font-size: 25rpx;
+	font-weight: bolder;
+}
+
+.orderState {
+	float: right;
+	color: #2196F3;
+	font-size: 35rpx;
+}
+
+.content {
+	width: 100%;
+	height: 200rpx;
+}
+
+.contentMessage {
+	width: 100%;
+	height: 200rpx;
+}
+
+.orderImg {
+	width: 150rpx;
+	height: 150rpx;
+	float: left;
+	margin-left: 40rpx;
+	margin-top: 20rpx;
+	border:1rpx solid transparent;
+	border-radius: 10rpx;
+}
+
+.orderMsg {
+	width: 70%;
+	height: 150rpx;
+	float: left;
+	margin-left: 20rpx;
+	margin-top: 20rpx;
+}
+
+.orderMsg .zuopin {
+	display: block;
+	font-size: 36rpx;
+	color: black;
+	font-weight: bolder;
+}
+
+.orderMsg .neirong {
+	display: block;
+	font-size: 26rpx;
+	color: gray;
+}
+
+.price {
+	width: 80%;
+	height: 100%;
+	float: right;
+}
+
+.priceText {
+	margin-left: 10rpx;
+	font-size: 30rpx;
+	color: black;
+	font-weight: bolder;
+}
+
+.footer {
+	margin-top: 30rpx;
+	width: 100%;
+	height: 100rpx;
+	padding: 10rpx;
+}
+
+.normal {
+	color: #7a7a7a;
+	border:1rpx solid #E9E9E9;
+	border-radius: 80rpx;
+	box-sizing: border-box;
+	float: right;
+	margin: 0 20rpx 0 10rpx;
+}
+
+.active {
+	color: #2196F3;
+	border:1rpx solid #2196F3;
+	border-radius: 80rpx;
+	box-sizing: border-box;
+	float: right;
+	margin: 0 20rpx 0 10rpx;
+}
+
+.footer button::after {
+	display: none;
+}

@@ -1,0 +1,11 @@
+<!--滑动组件-->
+<view class="scroll">
+	<scroll-view scroll-x="true" class="scroll-view" scroll-left="{{slideLeft}}">
+		<view class='Content'>
+			<view class="List" wx:for="{{themeList}}" wx:key data-id="{{index}}" catchtap="themeClick">
+        <image class="bgImg {{tabCur==index?'active':''}}" src="{{item.img}}"></image>
+				<text class="bgText {{tabCur==index?'textActive':''}}">{{item.text}}</text>
+      </view>
+		</view>
+	</scroll-view>
+</view>

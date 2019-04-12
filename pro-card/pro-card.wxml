@@ -1,0 +1,21 @@
+<!--作品卡片组件-->
+<view class="cu-card case {{isCard?'no-card':''}}" style="width:{{width}};height:{{height}};">
+  <view wx:for="{{proList}}" wx:key class="cu-item shadow">
+    <view class='image'>
+      <image src="{{item.img}}" mode="widthFix" catchtap="jumpPro"></image>
+    </view>
+    <view class="cu-list menu menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar" style="background-image:url({{item.avatar}});" catchtap="jumpUser"></view>
+        <view class='content flex-sub'>
+          <view class='text-black text-lg flex justify-between'>
+            {{item.text}}
+            <view class="text-black text-lg">
+              <text class="icon-like" catchtap="addHeart"></text> {{item.heart}}
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

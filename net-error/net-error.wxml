@@ -1,0 +1,8 @@
+<!--网路错误页面-->
+<view class="container">
+	<view class="cu-avatar xl" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);"></view>
+	<view class="text1">网络问题</view>
+	<view class="text2">网络都去哪啦?</view>
+	<view class="text2">请连接网络后重试哦~</view>
+	<button class="button" size="mini" plain="true" catchtap="buttonTap">点击重试</button>
+</view>

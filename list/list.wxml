@@ -1,0 +1,16 @@
+<!--左滑删除列表组件-->
+<view class="cu-list menu menu-avatar">
+  <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{messageList}}" wx:key bindtouchstart='ListTouchStart' bindtouchmove='ListTouchMove' bindtouchend='ListTouchEnd' data-target="move-box-{{index}}">
+    <view class="cu-avatar" style="background-image:url({{item.img}});"></view>
+    <view class='content'>
+      <view>{{item.state}}</view>
+      <view>{{item.message}}</view>
+    </view>
+    <view class='action'>
+      <view>{{item.time}}</view>
+    </view>
+    <view class='move'>
+      <view class="bg-red" catchtap="remove">删除</view>
+    </view>
+  </view>
+</view>

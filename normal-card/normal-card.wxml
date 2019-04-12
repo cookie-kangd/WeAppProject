@@ -1,0 +1,15 @@
+<!--普通卡片组件-->
+<view class="scroll">
+	<scroll-view scroll-x="true" class="scroll-view" scroll-left="{{slideLeft}}">
+		<view class='Content'>
+			<view class="List {{item.mask==0?'bg-mask':''}}" style="background-image:url({{item.img}});width:{{width}};height:{{height}};" wx:for="{{normalList}}" wx:key data-id="{{index}}"
+			 catchtap="themeClick">
+				<view class="padding-xl {{item.mask==0?'':'noActive'}}">
+					<view>
+						{{item.text}}
+					</view>
+				</view>
+			</view>
+		</view>
+	</scroll-view>
+</view>

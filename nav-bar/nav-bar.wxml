@@ -1,0 +1,9 @@
+<!--一级导航栏组件-->
+<scroll-view scroll-x class="nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+	<view>
+		<icon class="icon-search" catchtap="jumpSearch" />
+		<view class="cu-item {{index==tabCur?'active cur':''}}" wx:for="{{navTab}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+			{{item}}
+		</view>
+	</view>
+</scroll-view>

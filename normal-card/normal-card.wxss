@@ -1,0 +1,61 @@
+.scroll {
+	width: 100%;
+	height: 400rpx;
+	overflow: hidden;
+}
+
+.scroll-view {
+	white-space: nowrap;
+	display: flex;
+}
+
+.Content {
+  margin:30rpx 20rpx 0 30rpx;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+.List {
+  position: relative;
+  width: 400rpx;
+  height: 300rpx;
+	border-radius: 10rpx;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  text-align: center;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 50rpx;
+  padding-bottom: 50rpx;
+}
+
+.bg-mask {
+  background-color: #333;
+  position: relative;
+}
+
+.bg-mask::after {
+  content: "";
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.padding-xl {
+  padding: 50rpx;
+	color: white !important;
+	font-size: 36rpx;
+}
+
+.noActive {
+	display: none;
+}

@@ -1,0 +1,8 @@
+<!--副导航栏组件-->
+<scroll-view scroll-x class="nav">
+  <view class='flex'>
+    <view class="cu-item {{index==tabCur?'active cur':''}}" wx:for="{{navTab2}}" wx:key="item" bindtap='tabSelect' data-id="{{index}}">
+      {{item}}
+    </view>
+  </view>
+</scroll-view>

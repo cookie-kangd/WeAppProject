@@ -1,0 +1,6 @@
+<!--系统维护页面-->
+<view class="container">
+	<view class="cu-avatar xl" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);"></view>
+	<view class="text1">系统维护</view>
+	<view class="text2">系统开小差啦，请稍后再试~</view>
+</view>

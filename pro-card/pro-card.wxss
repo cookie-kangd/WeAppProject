@@ -1,0 +1,152 @@
+.cu-card {
+  display: block;
+  overflow: hidden;
+}
+
+.cu-card>.cu-item {
+  display: block;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 10rpx;
+  margin: 30rpx;
+}
+
+.cu-card.no-card>.cu-item {
+  margin: 0rpx;
+  border-radius: 0rpx;
+}
+
+.cu-card.case .image {
+  position: relative;
+}
+
+.cu-card.case .image image {
+  width: 100%;
+}
+
+.cu-card.case.no-card .image {
+  margin: 30rpx 30rpx 0;
+  overflow: hidden;
+  border-radius: 10rpx;
+}
+
+.shadow {
+  box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0.1);
+}
+
+.cu-list.menu {
+  display: block;
+  overflow: hidden;
+}
+
+.cu-list+.cu-list {
+  margin-top: 30rpx;
+}
+
+.cu-list.menu>.cu-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100rpx;
+  background: #fff;
+  padding: 0 30rpx;
+}
+
+.cu-list.menu>.cu-item::after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.cu-list.menu>.cu-item:last-child::after {
+  border: none;
+}
+
+.cu-list.menu-avatar>.cu-item {
+  padding-left: 140rpx;
+}
+
+.cu-list.menu-avatar>.cu-item .cu-avatar {
+  left: 30rpx;
+}
+
+.cu-list.menu>.cu-item .content {
+  line-height: 1.6em;
+  flex: 1;
+  font-size: 30rpx;
+}
+
+.cu-list.menu-avatar>.cu-item {
+  padding-left: 100rpx;
+  height: 140rpx;
+}
+
+.cu-list.menu-avatar>.cu-item>.cu-avatar {
+  position: absolute;
+  left: 30rpx;
+}
+
+.cu-list>.cu-item {
+  transform: translateX(0rpx);
+  transition: all 0.6s ease-in-out 0s;
+}
+
+.cu-avatar {
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #ccc;
+  color: #fff;
+  white-space: nowrap;
+  position: relative;
+  width: 64rpx;
+  height: 64rpx;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  font-size: 1.5em;
+	border-radius: 5000rpx;
+}
+
+.flex-sub {
+  flex: 1;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-lg {
+  font-size: 36rpx;
+}
+
+.flex {
+	display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.icon-like:before { 
+  content: "\e669";
+	margin-right: 5rpx;
+}
+
+.bold {
+	font-weight: bolder;
+}

@@ -1,0 +1,29 @@
+.nav {
+  white-space: nowrap;
+	background: #FFFFFF;
+}
+
+.flex {
+	display: flex;
+	text-align: center;
+}
+
+.nav .cu-item {
+  height: 90rpx;
+  display: inline-block;
+  line-height: 90rpx;
+  margin: 0 10rpx;
+  padding: 0 1rpx;
+	flex: 1;
+}
+
+.nav .cu-item.cur {
+  border-bottom: 4rpx solid #0080FF;
+	margin-bottom: 20rpx;
+}
+
+.active {
+  color: black;
+  font-size: 35rpx;
+  font-weight: 600;
+}
